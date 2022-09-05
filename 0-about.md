@@ -52,7 +52,22 @@ Computer music, livecoding and instrument/system design
 <!-- _class: lead -->
 # What is SuperCollider?
 
-TODO
+SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound
+
+It is free and open source software available for Windows, macOS, and Linux.
+
+--- 
+
+# Why SuperCollider?
+
+- Open source and free
+- 20+ years of development
+- Efficient, robust and stable 
+- Incredibly flexible
+- Cross platform
+- Unique design concepts and features
+- Text based -> fast 
+- Big community 
 
 ---
 # Design
