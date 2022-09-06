@@ -194,6 +194,14 @@ Try typing `2+2` and evaluate it:
 -> 4
 ```
 
+---
+
+# Evaluating code
+
+- Lines of code
+- Code blocks 
+
+
 --- 
 
 # Autocompletion
@@ -232,7 +240,6 @@ There's an online version of the help system available at
 This is where you see the resulting return messages of the code you have evaluated
 
 This is also where you see error messages posted.
-
 ---
 
 <!-- _class: lead -->
@@ -286,3 +293,4 @@ Find inspiration and (a lot more) more resources here:
 - Contribute to SuperCollider - improve documentation, help out on the forums or make bug reports
 
 ---
+
