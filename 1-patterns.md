@@ -414,5 +414,12 @@ TempoClock.default.tempo_(0.25) // quarter tempo
 TempoClock.default.tempo_(1) // normal tempo
 
 ```
-
 ---
+
+# Exercise
+
+Make a Pbind that contains a little composition.
+
+Use **at least 3 different value patterns**
+
+Examples: [Pseq](https://doc.sccode.org/Classes/Pseq.html), [Pwhite](https://doc.sccode.org/Classes/Pwhite.html), [Pbrown](https://doc.sccode.org/Classes/Pbrown.html), [Prand](https://doc.sccode.org/Classes/Prand.html), [Pwalk](https://doc.sccode.org/Classes/Pwalk.html), [Pseg](https://doc.sccode.org/Classes/Pseg.html)
