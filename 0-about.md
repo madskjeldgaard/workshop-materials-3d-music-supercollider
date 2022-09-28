@@ -18,13 +18,12 @@ class:
 
 # Plan for today
 
-- Introduction
-- Patterns
-- SynthDefs
-- Ambisonics
+* Part 1: Introduction
+* Part 2: Patterns
+* Part 3: SynthDefs
+* Part 4: Ambisonics
 
 ---
-
 
 # Notam
 
@@ -35,18 +34,24 @@ class:
 
 ---
 
-# My SuperCollider practice
-
-Computer music, livecoding and instrument/system design
-
----
-
 # Contact info
 
 - mail: [mail@madskjeldgaard.dk](mailto:mail@madskjeldgaard.dk)
 - web: [madskjeldgaard.dk](http://madskjeldgaard.dk)
 - github: [github.com/madskjeldgaard](http://github.com/madskjeldgaard)
 - work: [notam.no](http://notam.no)
+
+---
+
+# Follow me on instagram
+
+[@madskjeld](https://www.instagram.com/madskjeld/)
+
+---
+
+# Follow me on mastodon
+
+[@madskjeldgaard@sonomu.club](https://sonomu.club/web/@madskjeldgaard)
 
 ---
 <!-- _class: lead -->
@@ -294,3 +299,13 @@ Find inspiration and (a lot more) more resources here:
 
 ---
 
+# A warning
+And finally, before we start making sound:
+
+Be really careful! Keep volumes at a reasonably low level to avoid damaging your ears.
+
+---
+
+# Sound demo 1
+
+Let's listen to some music ...

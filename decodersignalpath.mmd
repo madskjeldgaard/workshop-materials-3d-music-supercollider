@@ -1,0 +1,13 @@
+graph TD
+    subgraph SuperCollider
+
+    subgraph Group1
+    Synth1 --> GroupOutput
+    Synth2 --> GroupOutput
+    Synth3 --> GroupOutput
+    end
+
+    GroupOutput --> DecoderSynth
+    end
+
+    DecoderSynth --> Speakers/Headphones

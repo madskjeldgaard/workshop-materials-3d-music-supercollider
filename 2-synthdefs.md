@@ -192,19 +192,37 @@ env = env.kr(done, gate, dur);
 sig = sig * env;
 Out.ar(out, sig )
 ```
+
+Hint: Don't forget to add `attack`, `decay`, `gate` and `dur` to list of arguments.
+
 ---
-# Add stereo pan
-
-So far, our synth has been mono. Let's make that stereo!
-
-``` 
-...
-sig = Pan2.ar(sig, pan);
-Out.ar(out, sig)
 ```
+SynthDef(\sawtooth, {
+	// Arguments
+	arg freq=442, cutoff=500, amp=0.5, out=0, attack=0.001, decay=0.99, dur=1, gate=1;
+
+	// Kill synth when done
+	var done = 2; 
+	// Percussive envelope
+	var env = Env.perc(attack, decay).kr(done, gate, dur);
+
+	// The sound generator
+	var sig = Saw.ar(freq);
+
+	// Scale amplitude and apply envelope
+	sig = sig * amp * env;
+
+	// Filter high frequencies
+	sig = LPF.ar(sig, cutoff);
+
+	Out.ar(out, sig)
+
+}).play;
+```
+
 ---
 
-# Exercise
+# Exercise: Modify your Synth!
 
 Try changing your SynthDef by exchanging the `Saw` to another type of oscillator. 
 

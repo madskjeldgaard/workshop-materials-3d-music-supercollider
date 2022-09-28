@@ -1,0 +1,19 @@
+graph LR
+
+    subgraph B-format
+    B[Ambisonics domain] --> |Transformations| B
+    end
+
+    subgraph A-format
+    A[Mono/stereo signal] -->|Encoding| B
+    F[Ambisonics mic] -->|Encoding| B
+    end
+
+    subgraph Listening
+    B -->|Decoding| C(Speakers)
+    B -->|Decoding| D(Headphones)
+    end
+
+    subgraph distribution
+    B -->|Raw| E(File)
+    end
