@@ -1,0 +1,19 @@
+# README
+
+These are slides for a workshop in 3D audio.
+
+See [this link for more information](https://madskjeldgaard.dk/posts/envelope-festival-3d-composition-workshop/)
+
+## Build
+
+The slides are written in markdown and can be converted using the `marp` cli tool.
+
+Convert to powerpoint:
+
+```
+marp -I . --pptx
+```
+PDF:
+```
+marp -I . --pdf
+```

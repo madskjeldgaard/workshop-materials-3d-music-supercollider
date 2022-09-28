@@ -379,6 +379,7 @@ SynthDef(\atk2ambix, {|out=0, bypass=0|
 ```
 
 ---
+
 ... And then:
 
 ```
