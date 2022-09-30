@@ -8,6 +8,13 @@ class:
 
 # Ambisonics
 
+We will now cover:
+* About ambisonics
+* Theory of ambisonics in the ATK
+* Encoding
+* Decoding (not really though)
+* Misc. fun stuff
+
 ---
 
 # Advantages of ambisonics
@@ -168,7 +175,7 @@ The `AtkHoa` class has a number of convenient functions.
 
 ---
 
-# Encoding
+# Encoding: Turning our synth into an ambisonics synth
 
 We will use the [HoaEncodeDirection](https://depts.washington.edu/dxscdoc/Help/Classes/HoaEncodeDirection.html) UGen to to our ambisonic panning.
 
@@ -313,7 +320,14 @@ Note: *You need to do this every time you press cmd-period*
 
 ---
 
-# Play your new ambisonic synth using a pattern!
+# Playing your new ambisonic synth using a pattern!
+
+* Specifying an instrument to play in a Pbind
+	* Use the `\instrument` key: `\instrument, \sawtooth`
+* Before proceding: Don't forget to spawn a decoder synth 
+	* **Make sure it's only one** - run `s.plotTree` and inspect the running synths to verify.
+
+---
 
 ```
 Pbind(
@@ -337,11 +351,22 @@ Pbind(
 	\elevation, 0,
 ).play;
 ```
+
 ---
 
-# Making the decoder synth "persistent"
+#  Now have fun with this for a bit
 
-TODO
+---
+
+# Bonus: Interfacing with Ambix
+
+To output ATK format ambisonics to be used in the IEM, Aalto or similar plugin suites:
+
+* Filter the near field radius to an appropriate radius
+* The channel ordering of Ambix and ATK format is the same, leave unchanged
+* Normalization needs to be changed from N3D to SN3D
+
+**Don't worry: There's a full synthdef on the next slide**
 
 ---
 
@@ -388,7 +413,7 @@ Synth.after(1, \atk2ambix);
 
 --- 
 
-# Advanced decoding
+# Bonus: Advanced decoding
 
 * You can use the [VST Plugin package](https://git.iem.at/pd/vstplugin) as well (see [this example](https://github.com/notam02/studio-3-resources/blob/master/supercollider/simple-decoder-mainfx.scd) )
 * Custom decoders using The Ambisonic Decoder Toolkit. [This package integrates it in SC](https://gitlab.com/dxarts/projects/adt.quark#adt)
@@ -396,15 +421,21 @@ Synth.after(1, \atk2ambix);
 
 ---
 
-# Recommended further reading: Ambisonic enlightenment
+# Bonus: Recommended further reading: Ambisonic enlightenment
 
 A help file that comes with ATK in SC:
 [Ambisonic enlightenment](https://depts.washington.edu/dxscdoc/Help/Tutorials/ATK-Enlightenment.html)
 
 ---
 
-# Making natively ambisonic effects
+# Bonus: Making natively ambisonic effects
 
 * The ATK allows you to make ambisonic native sound effects
 * The technique is called "Spherical decomposition" (and recomposition)
 * See this help file for a tutorial: [Spherical decomposition guide](https://depts.washington.edu/dxscdoc/Help/Guides/HOA-Spherical.html)
+
+---
+
+# Thanks for sticking around
+
+If you see this, you probably endured the whole workshop. Well done :)

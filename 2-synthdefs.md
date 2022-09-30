@@ -12,9 +12,9 @@ class:
 
 #  Basic concept: Instances of an instrument
 
-- One synthesizer per note
-- Only exists in that lifetime
-- Efficiency
+* One synthesizer per note
+* Only exists in that lifetime
+* Efficiency
 
 ---
 
@@ -84,14 +84,14 @@ SynthDef(\name, { arg freq;
 
 # UGen rates
 
-- `.ar` – Audio rate
-- `.kr` - Control rate 
-	- Lower "resolution" 
-	- more effective 
-	- Used for LFOs, modulators etc.
-- `.ir` - Initial rate (aka. Scalar) 
-	- Set once on initialization and can't be changed
-	- Used for [SampleRate](https://doc.sccode.org/Classes/SampleRate.html) etc.
+* `.ar` – Audio rate
+* `.kr` - Control rate 
+	* Lower "resolution" 
+	* more effective 
+	* Used for LFOs, modulators etc.
+* `.ir` - Initial rate (aka. Scalar) 
+	* Set once on initialization and can't be changed
+	* Used for [SampleRate](https://doc.sccode.org/Classes/SampleRate.html) etc.
 
 ---
 
@@ -128,6 +128,11 @@ Sometimes it's sensible to have a default value
 ---
 
 # When to use arguments and when to use variables?
+
+* Arguments are your instruments interface
+	* The keys, knobs and buttons of a synthesizer
+* Variables are internal to your instrument
+	* The circuit boards inside of a synthesizer
 
 ---
 
@@ -230,4 +235,4 @@ Try changing your SynthDef by exchanging the `Saw` to another type of oscillator
 
 **Hint:** [Pulse](https://doc.sccode.org/Classes/Pulse.html), [DPW3Tri](https://doc.sccode.org/Classes/DPW3Tri.html) and [SinOscFB](https://doc.sccode.org/Classes/SinOscFB.html) are fun alternatives.
 
-_Make sure to read the help file._
+_Make sure to read the help files._

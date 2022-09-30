@@ -100,31 +100,10 @@ What data does that involve?
 
 ---
 
-- Duration of key press
-- Pitch of the key
-- Sustain (are you holding the foot pedal?)
-- etc. etc.
-
----
-
-# What does an Event look like?
-
-Make sure your server is booted before trying this:
-
-```
-// See the post window when evaluating these
-().play; // Default event
-(freq:999).play; 
-(freq:123, sustain: 8).play;
-```
----
-
-# Changing the default synth
-The default synth sucks
-
-You can change it by defining a new synth called \default
-
-More info on [my website](https://madskjeldgaard.dk/how-to-change-the-default-synth-in-supercollider/)
+* Duration of key press
+* Pitch of the key
+* Sustain (are you holding the foot pedal?)
+* etc. etc.
 
 ---
 
@@ -150,43 +129,15 @@ Example: If a SynthDef has the argument cutoff, we can access that argument in a
 
 # Some keys are special
 
----
-
-# dur
-
-\dur is used in most SynthDefs to specify the duration of a note/event.
-
-Make sure this key never gets the value 0.
-
----
-
-# stretch
-
-\stretch is used to stretch or shrink the timing of a Pbind
+* `\dur` is used in most SynthDefs to specify the duration of a note/event.
+* `\stretch` is used to stretch or shrink the timing of a Pbind
+* **Note: Make sure these keys never reach the value 0 or below.**
 
 ---
 
 # When does a Pbind end?
 
 If one of the keys of a Pbind are supplied with a fixed length value pattern, the one running out of values first, will make the Pbind end.
-
----
-
-# Live coding: Pdef
-Live coding patterns: Wrap your event pattern (Pbind) in a Pdef:
-
-```
-Pdef('myCoolPattern', Pbind(...)).play;
-```
-
----
-
-# What this means
-The Pdef has a name 'myCoolPattern' which is a kind of data slot accessible throughout your system
-
-Every time you evaluate this code, it overwrites that data slot (maintaining only one copy)
-
----
 
 ---
 
@@ -199,10 +150,10 @@ Every time you evaluate this code, it overwrites that data slot (maintaining onl
 # The building blocks of compositions
 
 Basic building blocks:
-- List patterns - `Pseq`
-- Random value patterns - `Pwhite`, `Pbrown`
-- Random sequence patterns - `Pshuf`, `Prand`, etc.
-- Rests
+* List patterns - `Pseq`
+* Random value patterns - `Pwhite`, `Pbrown`
+* Random sequence patterns - `Pshuf`, `Prand`, etc.
+* Rests
 
 ---
 
@@ -394,10 +345,11 @@ Pbind(\octave, 7, \degree, Pseq((1..10))).play;
 
 # Playing chords
 
+Add an array of numbers to the degree parameter to play several synths at the same time (as a chord).
+First Pseq is the chord structure, second is the offset
+
 ```
-// Add an array of numbers to the degree parameter 
-// to play several synths at the same time (as a chord)
-Pbind(\degree, [0,2,5] + Pseq([2,4,5],inf), \dur, 0.25).play;
+Pbind(\degree, Pseq([[0,2,5]],inf) + Pseq([0,2,4,5],inf), \dur, 0.25).play;
 ```
 
 --- 
@@ -413,6 +365,14 @@ TempoClock.default.tempo_(0.5) // Half tempo
 TempoClock.default.tempo_(0.25) // quarter tempo
 TempoClock.default.tempo_(1) // normal tempo
 
+```
+---
+
+# Live coding patterns: Pdef
+Wrap your event pattern (Pbind) in a Pdef and give it a name
+
+```
+Pdef('myCoolPattern', Pbind(...)).play;
 ```
 ---
 

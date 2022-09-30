@@ -9,10 +9,10 @@ class:
 ---
 # About me
 
-- Name: Mads Kjeldgaard
-- Occupation: Composer and developer
-- Work: The Norwegian Center for Technology and Art (Notam)
-- Based in: Copenhagen, Denmark
+* Name: Mads Kjeldgaard
+* Occupation: Composer and developer
+* Work: The Norwegian Center for Technology and Art (Notam)
+* Based in: Copenhagen, Denmark
 
 ---
 
@@ -27,19 +27,19 @@ class:
 
 # Notam
 
-- Development for art projects (hardware, software, tech and artistic guidance)
-- Communities / meetups (SC + spatial audio meetups among others), see website [notam.no](http://notam.no)
-- Studios / 3D sound / VR / Visuals / Electronics
-- Courses
+* Development for art projects (hardware, software, tech and artistic guidance)
+* Communities / meetups (SC + spatial audio meetups among others), see website [notam.no](http://notam.no)
+* Studios / 3D sound / VR / Visuals / Electronics
+* Courses
 
 ---
 
 # Contact info
 
-- mail: [mail@madskjeldgaard.dk](mailto:mail@madskjeldgaard.dk)
-- web: [madskjeldgaard.dk](http://madskjeldgaard.dk)
-- github: [github.com/madskjeldgaard](http://github.com/madskjeldgaard)
-- work: [notam.no](http://notam.no)
+* mail: [mail@madskjeldgaard.dk](mailto:mail@madskjeldgaard.dk)
+* web: [madskjeldgaard.dk](http://madskjeldgaard.dk)
+* github: [github.com/madskjeldgaard](http://github.com/madskjeldgaard)
+* work: [notam.no](http://notam.no)
 
 ---
 
@@ -65,14 +65,14 @@ It is free and open source software available for Windows, macOS, and Linux.
 
 # Why SuperCollider?
 
-- Open source and free
-- 20+ years of development
-- Efficient, robust and stable 
-- Incredibly flexible
-- Cross platform
-- Unique design concepts and features
-- Text based -> fast 
-- Big community 
+* Open source and free
+* 20+ years of development
+* Efficient, robust and stable 
+* Incredibly flexible
+* Cross platform
+* Unique design concepts and features
+* Text based -> fast 
+* Big community 
 
 ---
 # Design
@@ -177,12 +177,12 @@ It has some really smart features that are really helpful when writing code.
 
 # Important keyboard shortcuts
 
-- Open help file for thing under cursor: __Ctrl/cmd + d__
-- Evaluate code block: __Ctrl/cmd + enter__
-- Stop all running code: __Ctrl/cmd + .__
-- Start audio server: __Ctrl/cmd + b__
-- Recompile: __Ctrl/cmd + shift + l__
-- Clear post window: __Ctrl/cmd + shift + p__
+* Open help file for thing under cursor: __Ctrl/cmd + d__
+* Evaluate code block: __Ctrl/cmd + enter__
+* Stop all running code: __Ctrl/cmd + .__
+* Start audio server: __Ctrl/cmd + b__
+* Recompile: __Ctrl/cmd + shift + l__
+* Clear post window: __Ctrl/cmd + shift + p__
 
 ---
 
@@ -203,8 +203,8 @@ Try typing `2+2` and evaluate it:
 
 # Evaluating code
 
-- Lines of code
-- Code blocks 
+* Lines of code
+* Code blocks 
 
 
 --- 
@@ -244,7 +244,8 @@ There's an online version of the help system available at
 
 This is where you see the resulting return messages of the code you have evaluated
 
-This is also where you see error messages posted.
+Error messages posted here.
+
 ---
 
 <!-- _class: lead -->
@@ -292,10 +293,10 @@ Find inspiration and (a lot more) more resources here:
 
 # Learning to code: Advice
 
-- Practice 5 minutes every day
-- Set yourself goals: Make (small) projects
-- Use the community
-- Contribute to SuperCollider - improve documentation, help out on the forums or make bug reports
+* Practice 5 minutes every day
+* Set yourself goals: Make (small) projects
+* Use the community
+* Contribute to SuperCollider * improve documentation, help out on the forums or make bug reports
 
 ---
 
