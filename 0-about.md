@@ -6,6 +6,8 @@ class:
 <!-- _class: lead -->
 # Composing music in 3D using SuperCollider
 
+Download slides at: [https://github.com/madskjeldgaard/workshop-materials-3d-music-supercollider](https://github.com/madskjeldgaard/workshop-materials-3d-music-supercollider) 
+
 ---
 # About me
 
